@@ -1,5 +1,6 @@
 "use strict";
-
+await db.initDb();
+await autoSeed();
 const { initDb } = require("./config/database");
 const app = require("./app");
 
